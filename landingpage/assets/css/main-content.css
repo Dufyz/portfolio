@@ -1,0 +1,46 @@
+.main-content {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background-color: var(--main-color);
+}
+
+.main-content-text h3 {
+    color: var(--main-text-color-darker);
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.main-content-text h2 {
+    color: var(--main-text-color-darker);
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.main-content-text h4 {
+    color: var(--main-text-color);
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.main-content-text p {
+    color: var(--main-text-color);
+    font-size: 2rem;
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+.main-content-text,
+.main-content-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.main-content-img {
+    max-width: 100%;
+    height: auto;
+}
