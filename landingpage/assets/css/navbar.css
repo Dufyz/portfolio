@@ -17,7 +17,7 @@
 }
 
 .navbar-menu-content h1 { 
-    color: var(--main-text-color);
+    color: var(--main-text-color-darker);
     font-size: 2rem;
     padding: 5px 50px 0 100px;
 }

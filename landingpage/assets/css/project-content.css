@@ -1,0 +1,12 @@
+.project-content-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.project-content-img img{
+    height: auto;
+}
+
+.project-content {
+}
