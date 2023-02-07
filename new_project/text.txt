@@ -1,1 +1,32 @@
-            
+            <!-- Project One Row-->
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                <!-- <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div> -->
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Projeto</h4>
+                                <p class="mb-0 text-white-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo similique nesciunt repellendus et porro repudiandae facilis amet! Ullam non veritatis quisquam, velit reprehenderit debitis vero aliquam exercitationem doloremque, nihil possimus.</p>
+                                <hr class="d-none d-lg-block mb-0 ms-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Two Row-->
+            <div class="row gx-0 justify-content-center">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                <!-- <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div> -->
+                <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Projeto</h4>
+                                <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dicta sint atque ipsa totam fugiat eveniet, molestias quod optio veritatis molestiae deleniti voluptate repellendus sequi rem asperiores facilis corporis alias?</p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
