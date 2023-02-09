@@ -664,7 +664,7 @@ progress {
   overflow: hidden;
 }
 
-.img-zoom img{
+.img-zoom img {
   max-width: 100%;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -3372,7 +3372,7 @@ fieldset:disabled .btn {
 }
 
 .btn-secondary {
-  color: #fff;  
+  color: #fff;
   background-color: #2379D5;
   border-color: #2379D5;
   /* background-color: #2379D5;
@@ -12670,14 +12670,14 @@ body {
   border: 0;
 }
 
+/* Guilherme */
 .masthead {
   position: relative;
   width: 100%;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  /* Guilherme */
-  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg"); */
+  /* background: red; */
   /* background: #1F1E1E; */
   background-position: center;
   background-repeat: no-repeat;
@@ -12718,7 +12718,7 @@ body {
 
 @media (min-width: 992px) {
   .masthead {
-    height: 100vh;
+    height: 100vh; 
     padding: 0;
   }
 
