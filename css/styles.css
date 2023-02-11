@@ -12786,9 +12786,14 @@ body {
 /* .projects-section a{
 } */
 
+
 /* Guilherme */
 .text-on-left {
   text-align: left;
+}
+
+.text-on-right {
+  text-align: right;
 }
 
 .projects-section .featured-text,.featured-text-right {
@@ -12817,6 +12822,22 @@ body {
 
   .projects-section h2 {
     padding-bottom: 20px;
+  }
+
+  .curriculum {
+    display: flex;
+  }
+  
+  .curriculum div {
+    width: 50%;
+  }
+
+  #div1 {
+    float: left;
+  }
+
+  #div2 {
+    float: right;
   }
 
 }
