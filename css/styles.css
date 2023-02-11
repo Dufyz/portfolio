@@ -12767,9 +12767,13 @@ body {
 }
 
 /* Guilherme */
-.projects-section h3 {
+.projects-section h3, h2 {
   color: #2379D5;
   font-weight: bold;
+}
+
+.projects-section h2 {
+  font-size: 3rem;
 }
 
 /* Guilherme */
@@ -12795,11 +12799,6 @@ body {
   padding: 2rem 2rem 2rem 0;
 }
 
-.projects-section img {
-  padding-left: 50px;
-}
-
-
 /* Guilherme */
 @media (min-width: 992px) {
   .projects-section .featured-text {
@@ -12810,6 +12809,14 @@ body {
   .projects-section .featured-text-right {
     padding: 0 0 0 2rem;
     border-right: 0.5rem solid #2379D5;
+  }
+
+  .projects-section img {
+    padding-left: 50px;
+  }
+
+  .projects-section h2 {
+    padding-bottom: 20px;
   }
 
 }
