@@ -12787,9 +12787,18 @@ body {
   text-align: left;
 }
 
-.projects-section .featured-text {
+.projects-section .featured-text,.featured-text-right {
   padding: 2rem 2rem 2rem 0;
 }
+
+.projects-section .featured-text-right {
+  padding: 2rem 2rem 2rem 0;
+}
+
+.projects-section img {
+  padding-left: 50px;
+}
+
 
 /* Guilherme */
 @media (min-width: 992px) {
@@ -12801,7 +12810,6 @@ body {
   .projects-section .featured-text-right {
     padding: 0 0 0 2rem;
     border-right: 0.5rem solid #2379D5;
-    margin-left: 0.5rem;
   }
 
 }
