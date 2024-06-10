@@ -1,5 +1,10 @@
 {
-  "Home": {
-    "title": "Olá mundo!"
+  "navbar": {
+    "items": {
+      "about": "sobre",
+      "experience": "experiência",
+      "work": "trabalho",
+      "contact": "contato"
+    }
   }
 }

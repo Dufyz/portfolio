@@ -1,5 +1,10 @@
 {
-  "Home": {
-    "title": "Hello world!"
+  "navbar": {
+    "items": {
+      "about": "about",
+      "experience": "experience",
+      "work": "work",
+      "contact": "contact"
+    }
   }
 }
