@@ -1,12 +1,12 @@
 .cta {
     padding: 16px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     color: #fff;
     background: #eab308;
     transition: 1s;
     box-shadow: 6px 6px 0 black;
-    transform: skewX(-15deg);
+    border-radius: 8px;
 }
 
 .cta:focus {

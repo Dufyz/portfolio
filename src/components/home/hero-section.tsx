@@ -30,11 +30,11 @@ export default function HeroSection() {
               </Link>
             </p>
           </div>
-          <button className="flex items-center justify-center">
-            <a className="cta" href="#">
+          <a className="flex items-center justify-center" href="#">
+            <button className="cta">
               <span>Checkout out my resume!</span>
-            </a>
-          </button>
+            </button>
+          </a>
         </div>
       </div>
     </section>
