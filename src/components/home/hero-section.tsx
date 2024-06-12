@@ -1,19 +1,24 @@
 import Link from "next/link";
+import "./styles.css";
 
 export default function HeroSection() {
   return (
     <section className="w-full h-[calc(100vh-80px)] px-12">
-      <div className="m-auto h-full max-w-screen-lg flex-1 w-full flex items-start justify-center flex-col text-white">
+      <div className="m-auto h-full max-w-screen-lg flex-1 w-full flex items-center justify-center flex-col text-white">
         <div className="flex items-start justify-center flex-col gap-14">
           <div className="flex items-start justify-center flex-col gap-8">
             <div className="flex items-start justify-center flex-col gap-4">
-              <p className="text-lg text-yellow-500">Hi, my name is</p>
+              <p className="text-lg text-yellow-500 font-semibold">
+                Hi, my name is
+              </p>
               <div className="flex items-start justify-center flex-col">
-                <h1 className="text-6xl">Guilherme Schmidt.</h1>
-                <h2 className="text-7xl text-zinc-400">I build somethings.</h2>
+                <h1 className="text-6xl font-bold">Guilherme Schmidt.</h1>
+                <h2 className="text-5xl text-zinc-400 font-bold">
+                  I build somethings.
+                </h2>
               </div>
             </div>
-            <p className="text-muted-foreground max-w-xl text-lg">
+            <p className="text-muted-foreground max-w-xl text-gray-500 text-xl">
               I’m a software engineer specializing in building exceptional
               digital experiences. Currently, I’m focused on my work at{" "}
               <Link
@@ -25,8 +30,10 @@ export default function HeroSection() {
               </Link>
             </p>
           </div>
-          <button className="rounded-md py-4 px-8 border border-yellow-500">
-            Check out my resume!
+          <button className="flex items-center justify-center">
+            <a className="cta" href="#">
+              <span>Checkout out my resume!</span>
+            </a>
           </button>
         </div>
       </div>

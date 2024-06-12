@@ -4,8 +4,8 @@ import { Inter as FontSans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { cn } from "@/lib/utils";
-import Navbar from "@/components/Global/navbar";
 import Footer from "@/components/Global/footer";
+import Navbar from "@/components/Global/Navbar";
 
 const fontSans = FontSans({
   subsets: ["latin"],
