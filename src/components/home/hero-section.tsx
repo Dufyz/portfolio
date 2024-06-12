@@ -1,15 +1,26 @@
 import Link from "next/link";
 import "./styles.css";
 
+import { Typewriter } from "react-simple-typewriter";
+
 export default function HeroSection() {
   return (
     <section className="w-full h-[calc(100vh-80px)] px-12">
       <div className="m-auto h-full max-w-screen-lg flex-1 w-full flex items-center justify-center flex-col text-white">
-        <div className="flex items-start justify-center flex-col gap-14">
+        <div
+          className="flex items-start justify-center flex-col gap-14"
+          data-aos="fade-up"
+        >
           <div className="flex items-start justify-center flex-col gap-8">
             <div className="flex items-start justify-center flex-col gap-4">
-              <p className="text-lg text-yellow-500 font-semibold">
-                Hi, my name is
+              <p className="text-lg text-yellow-500 font-semibold min-h-[28px]">
+                <Typewriter
+                  words={["Hi, my name is"]}
+                  loop={Infinity}
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={5000}
+                />
               </p>
               <div className="flex items-start justify-center flex-col">
                 <h1 className="text-6xl font-bold">Guilherme Schmidt.</h1>
@@ -36,6 +47,7 @@ export default function HeroSection() {
             </button>
           </a>
         </div>
+        <p></p>
       </div>
     </section>
   );

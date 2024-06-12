@@ -1,4 +1,5 @@
 import "./globals.css";
+import "aos/dist/aos.css";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
