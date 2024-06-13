@@ -6,5 +6,11 @@
       "work": "trabalho",
       "contact": "contato"
     }
+  },
+  "heroSection": {
+    "h1": "Olá, meu nome é",
+    "h2": "Eu construo algumas coisas.",
+    "description": "Eu sou um engenheiro de software especializado em construir experiências digitais. Atualmente, eu estou focado no meu trabalho na",
+    "resumeButton": "Confira o meu currículo!"
   }
 }
