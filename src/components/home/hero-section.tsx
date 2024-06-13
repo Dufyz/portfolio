@@ -1,14 +1,23 @@
 import Link from "next/link";
-import "./styles.css";
 
 import { Typewriter } from "react-simple-typewriter";
 import { useTranslations } from "next-intl";
+import AnimatedButton from "../Global/AnimatedButton";
+import { useInView } from "react-intersection-observer";
+import { useEffect, useState } from "react";
 
 export default function HeroSection() {
+  const { ref, inView } = useInView();
+  const [key, setKey] = useState(0);
+
+  useEffect(() => {
+    if (inView) setKey((prevKey) => prevKey + 1);
+  }, [inView]);
+
   const t = useTranslations("heroSection");
 
   return (
-    <section className="w-full h-[calc(100vh-80px)] px-12">
+    <section className="w-full h-[calc(100vh-80px)] px-12 py-4">
       <div className="m-auto h-full max-w-screen-lg flex-1 w-full flex items-center justify-center flex-col text-white">
         <div
           className="flex items-start justify-center flex-col gap-14"
@@ -16,17 +25,21 @@ export default function HeroSection() {
         >
           <div className="flex items-start justify-center flex-col gap-8">
             <div className="flex items-start justify-center flex-col gap-4">
-              <p className="text-lg text-yellow-500 font-semibold min-h-[28px]">
+              <p
+                className="text-lg text-yellow-500 font-semibold min-h-[28px]"
+                ref={ref}
+              >
                 <Typewriter
+                  key={key}
                   words={[t("h1")]}
                   loop={Infinity}
-                  typeSpeed={70}
+                  typeSpeed={60}
                   deleteSpeed={50}
-                  delaySpeed={5000}
+                  delaySpeed={3000}
                 />
               </p>
               <div className="flex items-start justify-center flex-col">
-                <h1 className="text-6xl font-bold">Guilherme Schmidt.</h1>
+                <h1 className=" text-6xl font-bold">Guilherme Schmidt.</h1>
                 <h2 className="text-5xl text-zinc-400 font-bold">{t("h2")}</h2>
               </div>
             </div>
@@ -41,13 +54,10 @@ export default function HeroSection() {
               </Link>
             </p>
           </div>
-          <a className="flex items-center justify-center" href="#">
-            <button className="cta">
-              <span>{t("resumeButton")}</span>
-            </button>
-          </a>
+          <AnimatedButton>
+            <span>{t("resumeButton")}</span>
+          </AnimatedButton>
         </div>
-        <p></p>
       </div>
     </section>
   );

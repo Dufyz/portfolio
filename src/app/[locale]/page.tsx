@@ -5,11 +5,12 @@ import { useEffect } from "react";
 
 import About from "@/components/home/about";
 import HeroSection from "@/components/home/hero-section";
+import Contact from "@/components/home/contact";
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      offset: 100,
+      offset: 300,
       duration: 500,
       easing: "ease-in-out",
     });
@@ -19,6 +20,7 @@ export default function Home() {
     <main className="bg-gray-900">
       <HeroSection />
       <About />
+      <Contact />
     </main>
   );
 }

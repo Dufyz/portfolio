@@ -1,4 +1,8 @@
-import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconBrandLinktree,
+} from "@tabler/icons-react";
 import Link from "next/link";
 
 export default function SocialMedias() {
@@ -17,6 +21,14 @@ export default function SocialMedias() {
           size={24}
         />
       </Link>
+      <Link href={"https://linktr.ee/Dufyz"} target="_blank">
+        <IconBrandLinktree
+          color="#eab308"
+          className="cursor-pointer"
+          size={24}
+        />
+      </Link>
+
       <div className="w-[1px] bg-yellow-500 h-20 hidden lg:block" />
     </div>
   );
