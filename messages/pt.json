@@ -12,5 +12,14 @@
     "h2": "Eu construo algumas coisas.",
     "description": "Eu sou um engenheiro de software especializado em construir experiências digitais. Atualmente, eu estou focado no meu trabalho na",
     "resumeButton": "Confira o meu currículo!"
+  },
+
+  "contact": {
+    "title": "Entrar em contato",
+    "descriptions": {
+      "first": "Se você tiver dúvidas ou interesse, não hesite em entrar em contato",
+      "second": "Obrigado pelo seu tempo e consideração."
+    },
+    "button": "Contato"
   }
 }

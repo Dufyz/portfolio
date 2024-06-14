@@ -12,5 +12,13 @@
     "h2": "I build somethings.",
     "description": "I’m a software engineer specializing in building exceptional digital experiences. Currently, I’m focused on my work at",
     "resumeButton": "Checkout out my resume!"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "descriptions": {
+      "first": "If you have any question or interest, do not hesitate to reach me.",
+      "second": "Thank you for your time and consideration."
+    },
+    "button": "Contact"
   }
 }

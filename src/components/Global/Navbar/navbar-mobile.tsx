@@ -4,8 +4,8 @@ import Link from "next/link";
 import { Dispatch, SetStateAction, useEffect } from "react";
 
 const LI_CLASSES = "flex items-center justify-center gap-1";
-const LI_ORDER_CLASSES = "text-gray-500";
-const LI_OPTION_CLASSES = "hover:text-yellow-500 text-white capitalize text-sm";
+const LI_ORDER_CLASSES = "text-gray-500 text-xl";
+const LI_OPTION_CLASSES = "hover:text-yellow-500 text-white capitalize text-lg";
 
 export default function NavbarMobile({
   open,
@@ -49,7 +49,7 @@ export default function NavbarMobile({
           type="button"
           onClick={() => setOpen(false)}
         />
-        <div className="sm:max-w-80 w-full h-screen bg-gray-900 border-l-[1px] p-6 flex flex-col gap-10">
+        <div className="sm:max-w-80 w-full h-screen bg-gray-900 border-l-[1px] p-6 flex flex-col gap-20">
           <div className="w-full flex items-center justify-end">
             <button type="button" onClick={() => setOpen(false)}>
               <IconX size={36} color="#eab308" className="cursor-pointer" />

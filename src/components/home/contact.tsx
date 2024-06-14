@@ -3,8 +3,10 @@ import AnimatedButton from "../Global/AnimatedButton";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
+  const t = useTranslations("contact");
   const { ref, inView } = useInView();
   const [key, setKey] = useState(0);
 
@@ -16,25 +18,29 @@ export default function Contact() {
     <section
       className="w-full text-white h-[60vh] flex items-center justify-center px-12"
       id="Contact"
+      data-aos="fade-up"
     >
       <div className="max-w-screen-sm w-full m-auto flex items-center justify-center flex-col gap-8">
         <div className="text-sm text-gray-500 gap-6 text-center flex flex-col items-center justify-center">
-          <h1 className="text-6xl text-white font-semibold min-h-16" ref={ref}>
+          <h1
+            className="text-4xl sm:text-5xl md:text-6xl text-white font-semibold min-h-16"
+            ref={ref}
+          >
             <Typewriter
               key={key}
-              words={["Get In Touch"]}
+              words={[t("title")]}
               loop={1}
               typeSpeed={50}
             />
           </h1>
-          <p className="text-lg text-zinc-400">
-            If you have any question or interest, do not hesitate to reach me.
-            Thank you for your time and consideration.
-          </p>
+          <div className="text-sm sm:text-base  md:text-lg text-zinc-400">
+            <p>{t("descriptions.first")}</p>
+            <p>{t("descriptions.second")}</p>
+          </div>
         </div>
         <Link href={"https://linktr.ee/Dufyz"} target="_blank">
           <AnimatedButton>
-            <span>Contact</span>
+            <span>{t("button")}</span>
           </AnimatedButton>
         </Link>
       </div>

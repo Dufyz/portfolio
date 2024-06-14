@@ -38,3 +38,10 @@ span:nth-child(2) {
     position: relative;
     top: 12%;
 }
+
+@media (max-width: 768px) {
+    .cta {
+        padding: 16px 12px;
+    }
+
+}
