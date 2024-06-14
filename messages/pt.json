@@ -3,7 +3,7 @@
     "items": {
       "about": "sobre",
       "experience": "experiência",
-      "work": "trabalho",
+      "projects": "projetos",
       "contact": "contato"
     }
   },
@@ -17,7 +17,7 @@
   "contact": {
     "title": "Entrar em contato",
     "descriptions": {
-      "first": "Se você tiver dúvidas ou interesse, não hesite em entrar em contato",
+      "first": "Se você tiver dúvidas ou interesse, não hesite em contactar-me.",
       "second": "Obrigado pelo seu tempo e consideração."
     },
     "button": "Contato"

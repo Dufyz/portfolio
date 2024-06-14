@@ -28,17 +28,6 @@
     margin-right: 45px;
 }
 
-span {
-    transform: skewX(15deg)
-}
-
-span:nth-child(2) {
-    width: 20px;
-    margin-left: 30px;
-    position: relative;
-    top: 12%;
-}
-
 @media (max-width: 768px) {
     .cta {
         padding: 16px 12px;

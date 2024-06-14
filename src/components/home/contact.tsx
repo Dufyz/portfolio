@@ -23,7 +23,7 @@ export default function Contact() {
       <div className="max-w-screen-sm w-full m-auto flex items-center justify-center flex-col gap-8">
         <div className="text-sm text-gray-500 gap-6 text-center flex flex-col items-center justify-center">
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl text-white font-semibold min-h-16"
+            className="text-4xl sm:text-5xl md:text-6xl text-white font-semibold min-h-16 text-center flex flex-col items-center justify-center sm:flex-row"
             ref={ref}
           >
             <Typewriter
@@ -32,6 +32,9 @@ export default function Contact() {
               loop={1}
               typeSpeed={50}
             />
+            <span className="text-3xl sm:text-4xl ml-2 order-first sm:order-last">
+              👀
+            </span>
           </h1>
           <div className="text-sm sm:text-base  md:text-lg text-zinc-400">
             <p>{t("descriptions.first")}</p>
