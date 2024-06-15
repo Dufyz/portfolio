@@ -69,10 +69,10 @@ export default function NavbarMobile({
                   <p className={LI_OPTION_CLASSES}>{t("items.experience")}</p>
                 </li>
               </Link>
-              <Link href={"#Projects"}>
+              <Link href={"#Work"}>
                 <li className={LI_CLASSES}>
                   <p className={LI_ORDER_CLASSES}>03.</p>
-                  <p className={LI_OPTION_CLASSES}>{t("items.projects")}</p>
+                  <p className={LI_OPTION_CLASSES}>{t("items.work")}</p>
                 </li>
               </Link>
               <Link href={"#Contact"}>

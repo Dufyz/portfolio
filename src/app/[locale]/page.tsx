@@ -6,6 +6,8 @@ import { useEffect } from "react";
 import About from "@/components/home/about";
 import HeroSection from "@/components/home/hero-section";
 import Contact from "@/components/home/contact";
+import Work from "@/components/home/work";
+import Experience from "@/components/home/experience";
 
 export default function Home() {
   useEffect(() => {
@@ -20,6 +22,8 @@ export default function Home() {
     <main className="bg-gray-900">
       <HeroSection />
       <About />
+      <Experience />
+      <Work />
       <Contact />
     </main>
   );
