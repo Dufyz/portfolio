@@ -27,29 +27,57 @@ export default function FeatureHighlite({
   side = "rigth",
 }: FeatureHighlite) {
   return (
-    <div className="w-full h-[362px] flex relative" data-aos="fade-up">
-      <div className="w-full flex-1 h-full absolute">
+    <div className="w-full lg:h-[362px] flex  relative flex-col-reverse gap-6 lg:flex-row-reverse">
+      <div
+        className={`w-full flex-1 h-full lg:absolute flex items-center   ${
+          side === "left" ? "justify-start" : "justify-end"
+        }`}
+      >
         <Image
           alt="project knowledge-base image"
-          width={500}
-          height={500}
+          width={1240}
+          height={1240}
           quality={100}
           src={imageSrc}
-          className="bg-yellow-500 w-full max-w-xl flex-1 h-full rounded-md object-cover hover:scale-125 transition delay-200 duration-300 ease-in-out"
+          className="bg-yellow-500 w-full lg:max-w-xl flex-1 h-[362px] lg:h-full rounded-md object-cover hover:scale-105  lg:hover:scale-110 transition delay-200 duration-300 ease-in-out"
         />
       </div>
-      <div className="flex-1 h-full flex items-end justify-start flex-col gap-4">
-        <div className="flex flex-col items-end justify-center gap-2 z-10 ">
+      <div
+        className={`flex-1 h-full flex ${
+          side === "left" ? "items-end" : "items-start"
+        } justify-start flex-col gap-4`}
+      >
+        <div
+          className={`flex flex-col ${
+            side === "left" ? "items-end" : "items-start"
+          } justify-center gap-2 z-10 `}
+        >
           <p className="text-base text-yellow-500">{label}</p>
-          <h1 className="text-3xl text-white font-semibold capitalize max-w-sm text-end">
+          <h1
+            className={`text-2xl  lg:text-3xl text-white font-semibold capitalize max-w-sm  ${
+              side === "left" ? "text-end" : "text-start"
+            }`}
+          >
             {title}
           </h1>
         </div>
-        <div className=" flex flex-col items-end justify-center gap-4">
-          <div className="w-full max-w-xl bg-gray-800 text-white rounded-md p-6 text-end max-h-44 line-clamp-6 z-10 ">
-            <p>{description}</p>
+        <div
+          className={` flex flex-col ${
+            side === "left" ? "items-end" : "items-start"
+          } justify-center gap-4`}
+        >
+          <div
+            className={`w-full text-sm lg:text-base lg:max-w-lg bg-gray-800 text-white rounded-md  ${
+              side === "left" ? "text-end" : "text-start"
+            } z-10 text-wrap `}
+          >
+            <p className="p-6 overflow-ellipsis">{description}</p>
           </div>
-          <div className="flex items-center justify-end gap-4 text-yellow-400 max-w-md flex-wrap z-10">
+          <div
+            className={`flex items-center ${
+              side === "left" ? "justify-end" : "justify-start"
+            }  lg:justify-end gap-2 lg:gap-4 text-yellow-400 max-w-md flex-wrap z-10 font-medium`}
+          >
             {technologies?.map((tech: Technologies, index) => (
               <Link
                 key={index}

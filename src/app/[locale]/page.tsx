@@ -9,7 +9,7 @@ import Contact from "@/components/home/contact";
 import Work from "@/components/home/work";
 import Experience from "@/components/home/experience";
 
-export default function Home() {
+export default function HomePage() {
   useEffect(() => {
     AOS.init({
       offset: 300,
@@ -21,8 +21,8 @@ export default function Home() {
   return (
     <main className="bg-gray-900">
       <HeroSection />
-      <About />
-      <Experience />
+      {/* <About /> */}
+      {/* <Experience /> */}
       <Work />
       <Contact />
     </main>
