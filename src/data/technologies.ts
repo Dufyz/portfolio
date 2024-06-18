@@ -19,6 +19,38 @@ export const technologies = {
     label: "Express",
     link: "https://expressjs.com/pt-br/",
   },
+  typescript: {
+    label: "Typescript",
+    link: "https://www.typescriptlang.org/",
+  },
+  python: {
+    label: "Python",
+    link: "https://www.python.org/",
+  },
+  github: {
+    label: "Github",
+    link: "https://github.com/",
+  },
+  git: {
+    label: "Git",
+    link: "https://www.git-scm.com/",
+  },
+  react: {
+    label: "React",
+    link: "https://react.dev/",
+  },
+  postgresql: {
+    label: "PostgreSql",
+    link: "https://www.postgresql.org/",
+  },
+  socketio: {
+    label: "Socket.io",
+    link: "https://socket.io/",
+  },
+  docker: {
+    label: "Docker",
+    link: "https://www.docker.com/",
+  },
 };
 
 export type Technologies = keyof typeof technologies;

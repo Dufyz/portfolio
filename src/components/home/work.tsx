@@ -6,12 +6,13 @@ import AnimatedButton from "../Global/AnimatedButton";
 
 export default function Work() {
   return (
-    <section className="w-full min-h-screen px-12" id="Work">
-      <div
-        className="max-w-screen-lg w-full m-auto flex items-center justify-center flex-col gap-16"
-        data-aos="fade-up"
-      >
-        <div className="w-full flex items-center flex-wrap justify-start pb-10 gap-2">
+    <section
+      className="w-full min-h-screen px-12 pt-[200px] md:pt-[256px]"
+      id="Work"
+      data-aos="fade-up"
+    >
+      <div className="max-w-screen-lg w-full m-auto flex items-center justify-center flex-col gap-10">
+        <div className="w-full flex items-center flex-wrap justify-start gap-2">
           <span className="text-gray-500 text-xl md:text-2xl">03.</span>
           <h1 className="text-yellow-400 text-3xl lg:text-4xl font-semibold">
             Some Things I’ve Built

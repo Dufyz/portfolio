@@ -21,7 +21,7 @@ export default function HomePage() {
   return (
     <main className="bg-gray-900">
       <HeroSection />
-      {/* <About /> */}
+      <About />
       {/* <Experience /> */}
       <Work />
       <Contact />

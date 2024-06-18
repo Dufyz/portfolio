@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`w-full bg-gray-900 h-20 flex items-center justify-between px-12 text-white sticky top-0 bg-opacity-95 ${
+      className={`w-full bg-gray-900 h-20 flex items-center justify-between px-12 text-white fixed top-0 bg-opacity-95 ${
         !open ? "backdrop-blur-sm" : ""
       } z-50`}
     >

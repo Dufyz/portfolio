@@ -17,10 +17,7 @@ export default function HeroSection() {
   const t = useTranslations("heroSection");
 
   return (
-    <section
-      className="w-full h-[calc(100vh-80px)] px-12 py-4"
-      data-aos="fade-up"
-    >
+    <section className="w-full h-screen px-12" data-aos="fade-up">
       <div className="m-auto h-full max-w-screen-lg flex-1 w-full flex items-center justify-center flex-col text-white">
         <div className="flex items-start justify-center flex-col gap-14">
           <div className="flex items-start justify-center flex-col gap-8">
