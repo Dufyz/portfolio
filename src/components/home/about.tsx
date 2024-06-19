@@ -1,7 +1,10 @@
 import { Technologies, technologies } from "@/data/technologies";
 import { IconChevronRight } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
-
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { Typewriter } from "react-simple-typewriter";
 const myTechnologies: Technologies[] = [
   "typescript",
   "nextjs",
@@ -16,7 +19,14 @@ const myTechnologies: Technologies[] = [
 ];
 
 export default function About() {
+  const { ref, inView } = useInView();
+  const [key, setKey] = useState(0);
+
   const t = useTranslations("about");
+
+  useEffect(() => {
+    if (inView) setKey((prevKey) => prevKey + 1);
+  }, [inView]);
 
   return (
     <section className="w-full h-[unset] md:h-screen px-12" data-aos="fade-up">
@@ -26,45 +36,55 @@ export default function About() {
       >
         <div className="w-full flex items-center flex-wrap justify-start gap-2 ">
           <span className="text-gray-500 text-xl md:text-2xl">01.</span>
-          <h1 className="text-yellow-400 text-3xl lg:text-4xl font-semibold">
-            About me
+          <h1
+            className="text-yellow-400 text-3xl lg:text-4xl font-semibold"
+            ref={ref}
+          >
+            <Typewriter
+              key={key}
+              words={["About me"]}
+              loop={1}
+              typeSpeed={40}
+            />
           </h1>
         </div>
-        <div className="flex flex-col-reverse w-full items-start justify-between gap-8 md:flex-row">
-          <div className="w-full max-w-xl flex flex-col items-start justify-center gap-10 text-white text-base sm:text-xl">
-            <div className="w-full">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Facilis maxime voluptas ex eligendi, aliquam doloribus dolor
-                facere, quaerat suscipit quo veritatis in neque fugiat eum illo
-                reiciendis, dolores ea at. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Veniam, deleniti? Laudantium
-                consectetur fugiat qui aut officia odit delectus, vel odio quod
-                ratione ad sint. Omnis labore velit debitis ab magnam.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                porro tempora ipsa maiores non totam harum voluptas asperiores
-                explicabo, voluptates, voluptatibus excepturi fuga officia
-                quibusdam repellendus neque aut atque quo!
-              </p>
-            </div>
-            <div className="w-full flex flex-col items-start justify-center gap-4 flex-wrap">
-              <p className="text-lg font-semibold">Technologies i work with:</p>
-              <div className="flex flex-row items-start gap-4 max-w-xl flex-wrap">
-                {myTechnologies.map((tech, index) => (
-                  <div key={index} className="flex items-center justify-center">
-                    <IconChevronRight color="#EAB308" size={20} />
-                    <p className="text-yellow-400 font-semibold text-lg list-disc">
-                      {technologies[tech].label}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+        <div className="flex flex-col-reverse w-full items-start justify-center gap-8 md:block ">
+          <div className="float-right flex w-full justify-center items-center md:ml-12 md:mb-12 md:w-[unset]">
+            <Image
+              alt="Guilherme's photo"
+              width={1240}
+              height={1240}
+              quality={100}
+              src={"/about/eu.jpeg"}
+              className="bg-yellow-500 w-full max-w-72 h-80 flex-1  md:h-full rounded-md object-cover hover:scale-105  lg:hover:scale-110 transition delay-200 duration-300 ease-in-out object-top"
+            />
           </div>
-          <div className="flex w-full md:max-w-80 justify-end">
-            <div className="bg-yellow-500 w-full h-80">a</div>
+          <div className="w-full text-white text-base sm:text-xl md:text-2xl">
+            <p className="mb-4">
+              Eu me descrevo como alguém apaixonado pelo conhecimento. Comecei a
+              estudar astronomia e, ao longo do caminho, descobri o quão
+              importante os dados são para a ciência e o funcionamento de
+              sistemas, carros, robôs e inteligências artificiais que tanto me
+              interessam. Foi assim que meu amor pela tecnologia surgiu quando
+              eu ainda era criança.
+            </p>
+            <p className="mb-4">
+              Como desenvolvedor, trabalho com ciência de dados, bancos de dados
+              e infraestrutura. Utilizo meu conhecimento em tecnologia para
+              desenvolver projetos que abrangem todas as minhas habilidades.
+              Minhas qualificações são respaldadas por uma sólida base
+              educacional onde minhas habilidades pessoais e acadêmicas foram
+              aprimoradas.
+            </p>
+
+            <p>
+              Como desenvolvedor, trabalho com ciência de dados, bancos de dados
+              e infraestrutura. Utilizo meu conhecimento em tecnologia para
+              desenvolver projetos que abrangem todas as minhas habilidades.
+              Minhas qualificações são respaldadas por uma sólida base
+              educacional onde minhas habilidades pessoais e acadêmicas foram
+              aprimoradas.
+            </p>
           </div>
         </div>
       </div>

@@ -13,7 +13,6 @@
     "description": "Eu sou um engenheiro de software especializado em construir experiências digitais. Atualmente, eu estou focado no meu trabalho na",
     "resumeButton": "Confira o meu currículo!"
   },
-
   "contact": {
     "title": "Entrar em contato",
     "descriptions": {
@@ -21,5 +20,11 @@
       "second": "Obrigado pelo seu tempo e consideração."
     },
     "button": "Contato"
+  },
+  "work": {
+    "title": "Algumas coisas que contruí",
+    "buttons": {
+      "viewMore": "Ver mais"
+    }
   }
 }

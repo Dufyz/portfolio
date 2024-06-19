@@ -44,18 +44,18 @@ export default function FeatureHighlite({
       </div>
       <div
         className={`flex-1 h-full flex ${
-          side === "left" ? "items-end" : "items-start"
+          side === "left" ? "lg:items-end" : "lg:items-start"
         } justify-start flex-col gap-4`}
       >
         <div
           className={`flex flex-col ${
-            side === "left" ? "items-end" : "items-start"
+            side === "left" ? "lg:items-end" : "lg:lg:items-start"
           } justify-center gap-2 z-10 `}
         >
           <p className="text-base text-yellow-500">{label}</p>
           <h1
             className={`text-2xl  lg:text-3xl text-white font-semibold capitalize max-w-sm  ${
-              side === "left" ? "text-end" : "text-start"
+              side === "left" ? "lg:text-end" : "lg:text-start"
             }`}
           >
             {title}
@@ -63,20 +63,20 @@ export default function FeatureHighlite({
         </div>
         <div
           className={` flex flex-col ${
-            side === "left" ? "items-end" : "items-start"
+            side === "left" ? "lg:items-end" : "lg:items-start"
           } justify-center gap-4`}
         >
           <div
             className={`w-full text-sm lg:text-base lg:max-w-lg bg-gray-800 text-white rounded-md  ${
-              side === "left" ? "text-end" : "text-start"
+              side === "left" ? "lg:text-end" : "lg:text-start"
             } z-10 text-wrap `}
           >
             <p className="p-6 overflow-ellipsis">{description}</p>
           </div>
           <div
             className={`flex items-center ${
-              side === "left" ? "justify-end" : "justify-start"
-            }  lg:justify-end gap-2 lg:gap-4 text-yellow-400 max-w-md flex-wrap z-10 font-medium`}
+              side === "left" ? "lg:justify-end" : "lg:justify-start"
+            }  lg:justify-end gap-2 lg:gap-4 text-yellow-500 max-w-md flex-wrap z-10 font-medium`}
           >
             {technologies?.map((tech: Technologies, index) => (
               <Link
@@ -88,7 +88,7 @@ export default function FeatureHighlite({
               </Link>
             ))}
           </div>
-          <div className="flex items-center justify-center gap-2 z-10">
+          <div className="flex items-center justify-start lg:justify-center gap-2 z-10">
             {externalLinks?.github && (
               <Link href={externalLinks?.github} target="_blank">
                 <IconBrandGithub color="white" className="cursor-pointer" />

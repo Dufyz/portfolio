@@ -30,7 +30,7 @@ export default function Contact() {
               key={key}
               words={[t("title")]}
               loop={1}
-              typeSpeed={50}
+              typeSpeed={30}
             />
             <span className="text-3xl sm:text-4xl ml-2 order-first sm:order-last">
               👀

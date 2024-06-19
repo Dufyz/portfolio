@@ -20,5 +20,11 @@
       "second": "Thank you for your time and consideration."
     },
     "button": "Contact"
+  },
+  "work": {
+    "title": " Some Things I’ve Built",
+    "buttons": {
+      "viewMore": "View more"
+    }
   }
 }

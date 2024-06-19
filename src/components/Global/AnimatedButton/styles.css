@@ -1,9 +1,8 @@
 .cta {
-
     font-size: 16px;
     font-weight: 700;
     color: #fff;
-    background: #eab308;
+    background: #F2C90F;
     transition: 1s;
     box-shadow: 6px 6px 0 black;
     border-radius: 8px;
@@ -26,11 +25,4 @@
 .cta:hover span:nth-child(2) {
     transition: 0.5s;
     margin-right: 45px;
-}
-
-@media (max-width: 768px) {
-    .cta {
-        padding: 16px 12px;
-    }
-
 }

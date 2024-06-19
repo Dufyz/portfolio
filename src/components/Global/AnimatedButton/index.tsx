@@ -10,5 +10,9 @@ export default function AnimatedButton({
   children: ReactNode;
   className?: string;
 }) {
-  return <button className={cn("cta p-4", className)}>{children}</button>;
+  return (
+    <button className={cn("cta p-4 md:px-4 md:py-3", className)}>
+      {children}
+    </button>
+  );
 }

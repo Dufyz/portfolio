@@ -19,7 +19,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <main className="bg-gray-900">
+    <main>
       <HeroSection />
       <About />
       {/* <Experience /> */}

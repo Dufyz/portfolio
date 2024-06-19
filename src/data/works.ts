@@ -2,8 +2,8 @@ import { FeatureHighlite } from "@/components/Global/feature-highlite";
 
 export const works: FeatureHighlite[] = [
   {
-    imageSrc: "/projects/knowledge-base.png",
-    title: "Knowledgebase / CMS",
+    imageSrc: "/projects/your-finance.png",
+    title: "YourFinance",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga adipisci similique modi magni accusamus, voluptas impedit ab repudiandae dolorum minima temporibus ea velit deleniti rem est aut eos nihil voluptatibus?",
     technologies: ["vercel", "nextjs", "expressjs", "tailwind", "shadcn"],
