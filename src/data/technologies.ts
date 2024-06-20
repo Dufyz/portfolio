@@ -51,6 +51,18 @@ export const technologies = {
     label: "Docker",
     link: "https://www.docker.com/",
   },
+  supabase: {
+    label: "Supabase",
+    link: "https://supabase.com/",
+  },
+  scikitLearn: {
+    label: "Scikit-Learn",
+    link: "https://scikit-learn.org/stable/",
+  },
+  pandas: {
+    label: "Pandas",
+    link: "https://pandas.pydata.org/",
+  },
 };
 
 export type Technologies = keyof typeof technologies;

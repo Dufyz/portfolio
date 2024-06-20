@@ -76,7 +76,7 @@ export default function FeatureHighlite({
           <div
             className={`flex items-center ${
               side === "left" ? "lg:justify-end" : "lg:justify-start"
-            }  lg:justify-end gap-2 lg:gap-4 text-yellow-500 max-w-md flex-wrap z-10 font-medium`}
+            }  gap-2 lg:gap-4 text-yellow-500 max-w-md flex-wrap z-10 font-medium`}
           >
             {technologies?.map((tech: Technologies, index) => (
               <Link

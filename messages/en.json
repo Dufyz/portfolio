@@ -7,6 +7,20 @@
       "contact": "contact"
     }
   },
+  "works": {
+    "knowledgeBase": {
+      "title": "Knowledgebase / CMS",
+      "description": "A robust multitenant content management system (CMS) platform, developed to facilitate the creation, organization, and access to a comprehensive knowledge base. This project offers a user-friendly and highly efficient interface. The CMS is integrated with third-party software (Sacflow), providing a complete and integrated solution for a knowledge base."
+    },
+    "yourFinance": {
+      "title": "YourFinance",
+      "description": "A complete financial application that allows users to manage their personal finances efficiently and securely. The intuitive interface and advanced features ensure a superior user experience."
+    },
+    "languageDetector": {
+      "title": "Language Detector",
+      "description": "A machine learning-based language detector designed to identify languages from provided texts. This project demonstrates the practical application of data science and machine learning techniques in a real-world context."
+    }
+  },
   "heroSection": {
     "h1": "Hi, my name is",
     "h2": "I build somethings.",
@@ -25,6 +39,14 @@
     "title": " Some Things I’ve Built",
     "buttons": {
       "viewMore": "View more"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "description": {
+      "p1": "My passion for knowledge began in childhood, with a fascination for astronomy. This initial interest led me to understand the importance of data in science and the operation of complex systems, such as cars, robots, and artificial intelligences. This is how my love for technology blossomed, guiding my career to where it is today.",
+      "p2": "Graduated in Software Engineering from the Federal University of Goiás (UFG), I have a solid academic and professional background that has enhanced my technical and personal skills. Over the years, I have acquired extensive experience in end-to-end development, databases, and infrastructure.",
+      "p3": "In my projects, I always strive to develop efficient and effective solutions, integrating multiple technologies and areas of knowledge. My commitment to excellence and continuous improvement is evident in every work I undertake. My past experiences are a testament to my dedication, demonstrating my skills in collaboration with teams."
     }
   }
 }

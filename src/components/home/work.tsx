@@ -1,4 +1,3 @@
-import { works } from "@/data/works";
 import FeatureHighlite from "@/components/Global/feature-highlite";
 import { IconChevronRight } from "@tabler/icons-react";
 import Link from "next/link";
@@ -7,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
+import { useWorks } from "@/data/works";
 
 const MAX_HIGLITES_HOME_PAGE = 3;
 
@@ -42,9 +42,11 @@ export default function Work() {
           </h1>
         </div>
         <div className="w-full flex-col gap-32 flex items-center justify-center">
-          {works.slice(0, MAX_HIGLITES_HOME_PAGE).map((work, index) => (
-            <FeatureHighlite {...work} key={index} />
-          ))}
+          {useWorks()
+            .slice(0, MAX_HIGLITES_HOME_PAGE)
+            .map((work, index) => (
+              <FeatureHighlite {...work} key={index} />
+            ))}
         </div>
         <div className="w-full flex items-center justify-end">
           <Link href={"/work"}>

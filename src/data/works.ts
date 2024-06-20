@@ -1,38 +1,52 @@
 import { FeatureHighlite } from "@/components/Global/feature-highlite";
+import { useTranslations } from "next-intl";
 
-export const works: FeatureHighlite[] = [
-  {
-    imageSrc: "/projects/your-finance.png",
-    title: "YourFinance",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga adipisci similique modi magni accusamus, voluptas impedit ab repudiandae dolorum minima temporibus ea velit deleniti rem est aut eos nihil voluptatibus?",
-    technologies: ["vercel", "nextjs", "expressjs", "tailwind", "shadcn"],
-    externalLinks: {
-      github: "TESTE",
-      external: "TESTE",
+export const useWorks = (): FeatureHighlite[] => {
+  const t = useTranslations("works");
+
+  return [
+    {
+      imageSrc: "/projects/knowledge-base.png",
+      title: t("knowledgeBase.title"),
+      description: t("knowledgeBase.description"),
+      technologies: [
+        "nextjs",
+        "postgresql",
+        "expressjs",
+        "supabase",
+        "vercel",
+        "tailwind",
+      ],
+      externalLinks: {
+        external: "https://ajuda.sacflow.io/hyerdev",
+      },
     },
-  },
-  {
-    imageSrc: "/projects/knowledge-base.png",
-    title: "Knowledgebase / CMS",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga adipisci similique modi magni accusamus, voluptas impedit ab repudiandae dolorum minima temporibus ea velit deleniti rem est aut eos nihil voluptatibus?",
-    technologies: ["vercel", "nextjs", "expressjs", "tailwind", "shadcn"],
-    externalLinks: {
-      github: "TESTE",
-      external: "TESTE",
+    {
+      imageSrc: "/projects/your-finance.png",
+      title: t("yourFinance.title"),
+      description: t("yourFinance.description"),
+      technologies: [
+        "nextjs",
+        "postgresql",
+        "supabase",
+        "vercel",
+        "tailwind",
+        "shadcn",
+      ],
+      externalLinks: {
+        github: "https://github.com/Dufyz/your-finance",
+        external: "https://your-finance-web.vercel.app/dashboard",
+      },
+      side: "left",
     },
-    side: "left",
-  },
-  {
-    imageSrc: "/projects/knowledge-base.png",
-    title: "Knowledgebase / CMS",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga adipisci similique modi magni accusamus, voluptas impedit ab repudiandae dolorum minima temporibus ea velit deleniti rem est aut eos nihil voluptatibus?",
-    technologies: ["vercel", "nextjs", "expressjs", "tailwind", "shadcn"],
-    externalLinks: {
-      github: "TESTE",
-      external: "TESTE",
+    {
+      imageSrc: "/projects/language-detector.png",
+      title: t("languageDetector.title"),
+      description: t("languageDetector.description"),
+      technologies: ["python", "scikitLearn", "pandas"],
+      externalLinks: {
+        github: "https://github.com/Dufyz/ML-Language-Detector-Interface",
+      },
     },
-  },
-];
+  ];
+};

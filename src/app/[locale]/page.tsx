@@ -12,7 +12,7 @@ import Experience from "@/components/home/experience";
 export default function HomePage() {
   useEffect(() => {
     AOS.init({
-      offset: 300,
+      offset: 100,
       duration: 500,
       easing: "ease-in-out",
     });

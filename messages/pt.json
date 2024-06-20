@@ -7,6 +7,20 @@
       "contact": "contato"
     }
   },
+  "works": {
+    "knowledgeBase": {
+      "title": "Knowledgebase / CMS",
+      "description": "Uma plataforma robusta de gestão de conteúdo (CMS) multitenant, desenvolvida para facilitar a criação, organização e acesso a uma base de conhecimento abrangente. Este projeto oferece uma interface amigável e altamente eficiente. O CMS é integrado ao software de terceiros (Sacflow), proporcionando uma solução completa e integrada para uma base de conhecimento."
+    },
+    "yourFinance": {
+      "title": "YourFinance",
+      "description": "Uma aplicação financeira completa que permite aos usuários gerenciar suas finanças pessoais de maneira eficiente e segura. A interface intuitiva e as funcionalidades avançadas garantem uma experiência de usuário superior."
+    },
+    "languageDetector": {
+      "title": "Language Detector",
+      "description": "Um detector de linguagem baseado em aprendizado de máquina, projetado para identificar idiomas a partir de textos fornecidos. Este projeto demonstra a aplicação prática de técnicas de ciência de dados e aprendizado de máquina em um contexto real."
+    }
+  },
   "heroSection": {
     "h1": "Olá, meu nome é",
     "h2": "Eu construo algumas coisas.",
@@ -25,6 +39,14 @@
     "title": "Algumas coisas que contruí",
     "buttons": {
       "viewMore": "Ver mais"
+    }
+  },
+  "about": {
+    "title": "Sobre mim",
+    "description": {
+      "p1": "Minha paixão pelo conhecimento começou na infância, com um fascínio pela astronomia. Esse interesse inicial me levou a entender a importância dos dados na ciência e na operação de sistemas complexos, como carros, robôs e inteligências artificiais. Foi assim que meu amor pela tecnologia floresceu, guiando minha carreira até onde estou hoje.",
+      "p2": "Formado em Engenharia de Software pela Universidade Federal de Goiás (UFG), possuo uma sólida formação acadêmica e profissional que aprimorou minhas competências técnicas e pessoais. Ao longo dos anos, adquiri uma vasta experiência em desenvolvimento ponta a ponta, bancos de dados e infraestrutura.",
+      "p3": "Em meus projetos, sempre busco desenvolver soluções eficientes e eficazes, integrando múltiplas tecnologias e áreas de conhecimento. Meu compromisso com a excelência e a melhoria contínua é evidente em cada trabalho que realizo. Minhas experiências passadas são uma prova da minha dedicação, demonstrando minha habilidades em conjunto com equipes."
     }
   }
 }

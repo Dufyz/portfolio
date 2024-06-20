@@ -42,7 +42,7 @@ export default function About() {
           >
             <Typewriter
               key={key}
-              words={["About me"]}
+              words={[t("title")]}
               loop={1}
               typeSpeed={40}
             />
@@ -60,31 +60,9 @@ export default function About() {
             />
           </div>
           <div className="w-full text-white text-base sm:text-xl md:text-2xl">
-            <p className="mb-4">
-              Eu me descrevo como alguém apaixonado pelo conhecimento. Comecei a
-              estudar astronomia e, ao longo do caminho, descobri o quão
-              importante os dados são para a ciência e o funcionamento de
-              sistemas, carros, robôs e inteligências artificiais que tanto me
-              interessam. Foi assim que meu amor pela tecnologia surgiu quando
-              eu ainda era criança.
-            </p>
-            <p className="mb-4">
-              Como desenvolvedor, trabalho com ciência de dados, bancos de dados
-              e infraestrutura. Utilizo meu conhecimento em tecnologia para
-              desenvolver projetos que abrangem todas as minhas habilidades.
-              Minhas qualificações são respaldadas por uma sólida base
-              educacional onde minhas habilidades pessoais e acadêmicas foram
-              aprimoradas.
-            </p>
-
-            <p>
-              Como desenvolvedor, trabalho com ciência de dados, bancos de dados
-              e infraestrutura. Utilizo meu conhecimento em tecnologia para
-              desenvolver projetos que abrangem todas as minhas habilidades.
-              Minhas qualificações são respaldadas por uma sólida base
-              educacional onde minhas habilidades pessoais e acadêmicas foram
-              aprimoradas.
-            </p>
+            <p className="mb-4">{t("description.p1")}</p>
+            <p className="mb-4">{t("description.p2")}</p>
+            <p>{t("description.p3")}</p>
           </div>
         </div>
       </div>
