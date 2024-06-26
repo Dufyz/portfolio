@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import { useWorks } from "@/data/works";
+import { useHighlightedWorks } from "@/data/highlightedWorks";
 
 const MAX_HIGLITES_HOME_PAGE = 3;
 
@@ -42,7 +42,7 @@ export default function Work() {
           </h1>
         </div>
         <div className="w-full flex-col gap-32 flex items-center justify-center">
-          {useWorks()
+          {useHighlightedWorks()
             .slice(0, MAX_HIGLITES_HOME_PAGE)
             .map((work, index) => (
               <FeatureHighlite {...work} key={index} />

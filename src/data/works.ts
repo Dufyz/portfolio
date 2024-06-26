@@ -1,52 +1,82 @@
-import { FeatureHighlite } from "@/components/Global/feature-highlite";
-import { useTranslations } from "next-intl";
+import { Technologies } from "./technologies";
 
-export const useWorks = (): FeatureHighlite[] => {
-  const t = useTranslations("works");
-
-  return [
-    {
-      imageSrc: "/projects/knowledge-base.png",
-      title: t("knowledgeBase.title"),
-      description: t("knowledgeBase.description"),
-      technologies: [
-        "nextjs",
-        "postgresql",
-        "expressjs",
-        "supabase",
-        "vercel",
-        "tailwind",
-      ],
-      externalLinks: {
-        external: "https://ajuda.sacflow.io/hyerdev",
-      },
-    },
-    {
-      imageSrc: "/projects/your-finance.png",
-      title: t("yourFinance.title"),
-      description: t("yourFinance.description"),
-      technologies: [
-        "nextjs",
-        "postgresql",
-        "supabase",
-        "vercel",
-        "tailwind",
-        "shadcn",
-      ],
-      externalLinks: {
-        github: "https://github.com/Dufyz/your-finance",
-        external: "https://your-finance-web.vercel.app/dashboard",
-      },
-      side: "left",
-    },
-    {
-      imageSrc: "/projects/language-detector.png",
-      title: t("languageDetector.title"),
-      description: t("languageDetector.description"),
-      technologies: ["python", "scikitLearn", "pandas"],
-      externalLinks: {
-        github: "https://github.com/Dufyz/ML-Language-Detector-Interface",
-      },
-    },
-  ];
+type WorkItem = {
+  year: number;
+  project: string;
+  technologies: Technologies[];
+  link: string;
+  isFavourite?: boolean;
 };
+
+export const works: WorkItem[] = [
+  {
+    year: 2024,
+    project: "Your Finance",
+    technologies: [
+      "nextjs",
+      "typescript",
+      "vercel",
+      "postgresql",
+      "supabase",
+      "docker",
+      "git",
+      "github",
+    ],
+    link: "https://github.com/Dufyz/your-finance",
+    isFavourite: true,
+  },
+  {
+    year: 2024,
+    project: "Hash challenge",
+    technologies: ["go"],
+    link: "https://github.com/Dufyz/hash-challenge",
+    isFavourite: true,
+  },
+  {
+    year: 2024,
+    project: "Knowledge Base",
+    technologies: [
+      "nextjs",
+      "typescript",
+      "vercel",
+      "postgresql",
+      "supabase",
+      "git",
+      "github",
+    ],
+    link: "https://ajuda.sacflow.io/hyerdev",
+    isFavourite: true,
+  },
+  {
+    year: 2024,
+    project: "Portfolio",
+    technologies: ["nextjs", "typescript", "tailwind", "vercel"],
+    link: "https://github.com/Dufyz/portfolio",
+    isFavourite: true,
+  },
+  {
+    year: 2024,
+    project: "CASER",
+    technologies: ["nextjs", "typescript", "tailwind", "vercel"],
+    link: "",
+  },
+  {
+    year: 2024,
+    project: "Duflix",
+    technologies: ["react"],
+    link: "https://github.com/Dufyz/duflix",
+  },
+  {
+    year: 2023,
+    project: "Language detector",
+    technologies: ["python", "pandas", "scikitLearn"],
+    link: "https://github.com/Dufyz/ML-Language-Detector-Interface",
+    isFavourite: true,
+  },
+  {
+    year: 2023,
+    project: "Twitter Computer Vision API",
+    technologies: ["python", "pandas", "scikitLearn"],
+    link: "https://github.com/Dufyz/Twitter-Computer-Vision-API",
+  },
+];

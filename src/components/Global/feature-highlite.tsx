@@ -52,7 +52,7 @@ export default function FeatureHighlite({
             side === "left" ? "lg:items-end" : "lg:lg:items-start"
           } justify-center gap-2 z-10 `}
         >
-          <p className="text-base text-yellow-500">{label}</p>
+          <p className="text-base font-semibold text-yellow-500">{label}</p>
           <h1
             className={`text-2xl  lg:text-3xl text-white font-semibold capitalize max-w-sm  ${
               side === "left" ? "lg:text-end" : "lg:text-start"

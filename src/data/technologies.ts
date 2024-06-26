@@ -63,6 +63,14 @@ export const technologies = {
     label: "Pandas",
     link: "https://pandas.pydata.org/",
   },
+  go: {
+    label: "GO",
+    link: "https://go.dev/",
+  },
+  styledComponents: {
+    label: "styled-components",
+    link: "https://styled-components.com/",
+  },
 };
 
 export type Technologies = keyof typeof technologies;
