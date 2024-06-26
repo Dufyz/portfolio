@@ -7,20 +7,6 @@
       "contact": "contato"
     }
   },
-  "works": {
-    "knowledgeBase": {
-      "title": "Knowledgebase / CMS",
-      "description": "Uma plataforma robusta de gestão de conteúdo (CMS) multitenant, desenvolvida para facilitar a criação, organização e acesso a uma base de conhecimento abrangente. Este projeto oferece uma interface amigável e altamente eficiente. O CMS é integrado ao software de terceiros (Sacflow), proporcionando uma solução completa e integrada para uma base de conhecimento."
-    },
-    "yourFinance": {
-      "title": "YourFinance",
-      "description": "Uma aplicação financeira completa que permite aos usuários gerenciar suas finanças pessoais de maneira eficiente e segura. A interface intuitiva e as funcionalidades avançadas garantem uma experiência de usuário superior."
-    },
-    "languageDetector": {
-      "title": "Language Detector",
-      "description": "Um detector de linguagem baseado em aprendizado de máquina, projetado para identificar idiomas a partir de textos fornecidos. Este projeto demonstra a aplicação prática de técnicas de ciência de dados e aprendizado de máquina em um contexto real."
-    }
-  },
   "heroSection": {
     "h1": "Olá, meu nome é",
     "h2": "Eu construo algumas coisas.",
@@ -39,6 +25,28 @@
     "title": "Algumas coisas que contruí",
     "buttons": {
       "viewMore": "Ver mais"
+    },
+    "highlightedProjects": {
+      "knowledgeBase": {
+        "title": "Knowledgebase / CMS",
+        "description": "Uma plataforma robusta de gestão de conteúdo (CMS) multitenant, desenvolvida para facilitar a criação, organização e acesso a uma base de conhecimento abrangente. Este projeto oferece uma interface amigável e altamente eficiente. O CMS é integrado ao software de terceiros (Sacflow), proporcionando uma solução completa e integrada para uma base de conhecimento."
+      },
+      "yourFinance": {
+        "title": "YourFinance",
+        "description": "Uma aplicação financeira completa que permite aos usuários gerenciar suas finanças pessoais de maneira eficiente e segura. A interface intuitiva e as funcionalidades avançadas garantem uma experiência de usuário superior."
+      },
+      "languageDetector": {
+        "title": "Language Detector",
+        "description": "Um detector de linguagem baseado em aprendizado de máquina, projetado para identificar idiomas a partir de textos fornecidos. Este projeto demonstra a aplicação prática de técnicas de ciência de dados e aprendizado de máquina em um contexto real."
+      }
+    },
+    "table": {
+      "title": "Todos os projetos",
+      "headers": {
+        "year": "Ano",
+        "project": "Projeto",
+        "technologies": "Tecnologias"
+      }
     }
   },
   "about": {
