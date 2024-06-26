@@ -57,25 +57,25 @@ export default function NavbarMobile({
           </div>
           <nav className="flex-1 items-start justify-center flex h-full">
             <ul className="flex flex-col items-start justify-center gap-8">
-              <Link href={"#About"}>
+              <Link href={"/#About"}>
                 <li className={LI_CLASSES}>
                   <p className={LI_ORDER_CLASSES}>01.</p>
                   <p className={LI_OPTION_CLASSES}>{t("items.about")}</p>
                 </li>
               </Link>
-              <Link href={"#Experience"}>
+              <Link href={"/#Experience"}>
                 <li className={LI_CLASSES}>
                   <p className={LI_ORDER_CLASSES}>02.</p>
                   <p className={LI_OPTION_CLASSES}>{t("items.experience")}</p>
                 </li>
               </Link>
-              <Link href={"#Work"}>
+              <Link href={"/#Work"}>
                 <li className={LI_CLASSES}>
                   <p className={LI_ORDER_CLASSES}>03.</p>
                   <p className={LI_OPTION_CLASSES}>{t("items.work")}</p>
                 </li>
               </Link>
-              <Link href={"#Contact"}>
+              <Link href={"/#Contact"}>
                 <li className={LI_CLASSES}>
                   <p className={LI_ORDER_CLASSES}>04.</p>
                   <p className={LI_OPTION_CLASSES}>{t("items.contact")}</p>
