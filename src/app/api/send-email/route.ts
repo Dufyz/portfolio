@@ -3,8 +3,8 @@ import { NextRequest } from "next/server";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const toEmail = new Resend(process.env.TO_EMAIL);
-const fromEmail = new Resend(process.env.FROM_EMAIL);
+const toEmail = process.env.TO_EMAIL;
+const fromEmail = process.env.FROM_EMAIL;
 
 type ContactEmailTemplateProps = {
   name: string;

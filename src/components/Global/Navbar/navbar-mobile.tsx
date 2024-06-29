@@ -21,9 +21,7 @@ export default function NavbarMobile() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger className=" lg:hidden">
-        <button type="button">
-          <IconMenuDeep size={36} color="#eab308" className="cursor-pointer" />
-        </button>
+        <IconMenuDeep size={36} color="#eab308" className="cursor-pointer" />
       </SheetTrigger>
       <SheetContent className="max-w-[unset] sm:!max-w-md w-full">
         <nav className="flex-1 items-start justify-center flex h-full py-20">

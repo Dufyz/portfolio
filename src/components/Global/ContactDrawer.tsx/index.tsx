@@ -50,17 +50,19 @@ export function ContactDrawer() {
     });
 
     try {
-      await fetch("/api/send-email", {
+      const response = await fetch("/api/send-email", {
         method: "POST",
         body,
       });
+
+      if (response.status !== 200) throw Error("API Error on send-email");
 
       reset();
 
       toast.success(t("form.toaster.success"));
     } catch (err) {
+      console.error(err);
       toast.error(t("form.toaster.error"));
-      console.log(err);
     }
   };
 
