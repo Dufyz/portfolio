@@ -37,6 +37,7 @@
         "subject": "Subject field is required",
         "email": "Email field is required"
       },
+      "others": "Others",
       "submit": "Submit"
     }
   },

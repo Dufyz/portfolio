@@ -37,6 +37,7 @@
         "subject": "Campo assunto é obrigatório.",
         "email": "Campo email é obrigatório."
       },
+      "others": "Outros",
       "submit": "Enviar"
     }
   },

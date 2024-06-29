@@ -89,7 +89,10 @@ export function ContactDrawer() {
               {errors.name?.message && (
                 <p className={ERROR_STYLES}>{t("form.errors.name")}</p>
               )}
-              <Input {...register("name")} placeholder="Nome" />
+              <Input
+                {...register("name")}
+                placeholder={t("form.labels.name")}
+              />
             </div>
             <div className="flex flex-col items-start gap-1 w-full">
               <label htmlFor="email" className={LABELS_STYLES}>
@@ -107,7 +110,10 @@ export function ContactDrawer() {
               {errors.subject?.message && (
                 <p className={ERROR_STYLES}>{t("form.errors.subject")}</p>
               )}
-              <Input {...register("subject")} placeholder="Subject" />
+              <Input
+                {...register("subject")}
+                placeholder={t("form.labels.subject")}
+              />
             </div>
             <div className="flex flex-col items-start gap-1 w-full">
               <label htmlFor="message" className={LABELS_STYLES}>
@@ -118,7 +124,7 @@ export function ContactDrawer() {
               )}
               <TextArea
                 {...register("message")}
-                placeholder="Message"
+                placeholder={t("form.labels.message")}
                 className="!min-h-40 resize-none scroll-area"
               />
             </div>
@@ -131,7 +137,9 @@ export function ContactDrawer() {
             </button>
           </form>
           <div className="w-full flex-col items-start justify-center gap-4 flex ">
-            <p className="text-xl text-white font-semibold">Others</p>
+            <p className="text-xl text-white font-semibold">
+              {t("form.others")}
+            </p>
             <div className="w-full flex flex-col gap-4 p-2">
               <SocialCard
                 link="https://www.linkedin.com/in/schmidt-iago-thomaz/"

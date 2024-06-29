@@ -64,7 +64,9 @@ export default function HeroSection() {
             </p>
           </div>
           <AnimatedButton>
-            <span>{t("resumeButton")}</span>
+            <Link href={"/guilherme-resume.pdf"} target="_blank" download>
+              <span>{t("resumeButton")}</span>
+            </Link>
           </AnimatedButton>
         </div>
       </div>
