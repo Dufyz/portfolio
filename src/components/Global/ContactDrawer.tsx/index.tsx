@@ -38,14 +38,13 @@ export function ContactDrawer() {
     handleSubmit,
     watch,
     register,
+    reset,
     formState: { errors },
   } = useForm<ContactSchemaType>({
     resolver: zodResolver(contactSchema),
   });
 
   const handleSubmitForm = async (formData: ContactSchemaType) => {
-    console.log(formData);
-
     const body = JSON.stringify({
       ...formData,
     });
@@ -56,8 +55,11 @@ export function ContactDrawer() {
         body,
       });
 
-      toast.success("Mensagem enviada com sucesso!");
+      reset();
+
+      toast.success(t("form.toaster.success"));
     } catch (err) {
+      toast.error(t("form.toaster.error"));
       console.log(err);
     }
   };
@@ -71,7 +73,7 @@ export function ContactDrawer() {
       </SheetTrigger>
       <SheetContent className="max-w-[unset] sm:!max-w-md w-full flex flex-col gap-12">
         <SheetHeader>
-          <SheetTitle className="text-white">{t("title")}</SheetTitle>
+          <SheetTitle className="text-white">{t("form.title")}</SheetTitle>
         </SheetHeader>
         <div className="flex items-start justify-start gap-14 flex-col overflow-auto scroll-area">
           <form
@@ -85,11 +87,7 @@ export function ContactDrawer() {
               {errors.name?.message && (
                 <p className={ERROR_STYLES}>{t("form.errors.name")}</p>
               )}
-              <Input
-                {...register("name")}
-                placeholder="Nome"
-                value={watch("name")}
-              />
+              <Input {...register("name")} placeholder="Nome" />
             </div>
             <div className="flex flex-col items-start gap-1 w-full">
               <label htmlFor="email" className={LABELS_STYLES}>
@@ -98,11 +96,7 @@ export function ContactDrawer() {
               {errors.email?.message && (
                 <p className={ERROR_STYLES}>{t("form.errors.email")}</p>
               )}
-              <Input
-                {...register("email")}
-                placeholder="E-mail"
-                value={watch("email")}
-              />
+              <Input {...register("email")} placeholder="E-mail" />
             </div>
             <div className="flex flex-col items-start gap-1 w-full">
               <label htmlFor="subject" className={LABELS_STYLES}>
@@ -111,11 +105,7 @@ export function ContactDrawer() {
               {errors.subject?.message && (
                 <p className={ERROR_STYLES}>{t("form.errors.subject")}</p>
               )}
-              <Input
-                {...register("subject")}
-                placeholder="Subject"
-                value={watch("subject")}
-              />
+              <Input {...register("subject")} placeholder="Subject" />
             </div>
             <div className="flex flex-col items-start gap-1 w-full">
               <label htmlFor="message" className={LABELS_STYLES}>
@@ -127,12 +117,12 @@ export function ContactDrawer() {
               <TextArea
                 {...register("message")}
                 placeholder="Message"
-                value={watch("message")}
                 className="!min-h-40 resize-none scroll-area"
               />
             </div>
 
             <button
+              type="submit"
               className={`w-[50%] py-2 px-4 bg-slate-700 hover:bg-slate-800 text-white font-medium rounded-md`}
             >
               {t("form.submit")}

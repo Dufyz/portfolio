@@ -89,7 +89,7 @@ export default function WorkPage() {
                   {item.year}
                 </TableCell>
                 <TableCell>
-                  <Link href={item.link} target="_blank">
+                  <Link href={item.link} target="_blank" className="underline">
                     {item.project}
                   </Link>
                 </TableCell>

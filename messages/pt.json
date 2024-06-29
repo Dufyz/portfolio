@@ -27,6 +27,10 @@
         "subject": "Assunto",
         "message": "Mensagem"
       },
+      "toaster": {
+        "success": "Mensagem enviada com sucesso!",
+        "error": "Falha ao enviar mensagem! Tente novamente!"
+      },
       "errors": {
         "name": "Campo nome é obrigatório.",
         "message": "Campo mensagem é obrigatório.",

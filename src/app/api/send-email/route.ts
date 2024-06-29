@@ -1,8 +1,10 @@
-import { ContactEmailTemplate } from "@/components/Global/ContactDrawer.tsx/contact-email-temapla";
+import { ContactEmailTemplate } from "@/components/Global/ContactDrawer.tsx/contact-email-template";
 import { NextRequest } from "next/server";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const toEmail = new Resend(process.env.TO_EMAIL);
+const fromEmail = new Resend(process.env.FROM_EMAIL);
 
 type ContactEmailTemplateProps = {
   name: string;
@@ -16,8 +18,8 @@ export async function POST(req: NextRequest) {
     const body: ContactEmailTemplateProps = await req.json();
 
     const { data, error } = await resend.emails.send({
-      from: `${body.name} <porfolio@dufyz.dev>`,
-      to: ["guilhermeiagothomaz@hotmail.com"],
+      from: `${body.name} <${fromEmail}>`,
+      to: [`${toEmail}`],
       subject: body.subject,
       text: "",
       react: ContactEmailTemplate({ ...body }),

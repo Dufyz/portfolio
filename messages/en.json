@@ -21,11 +21,15 @@
     },
     "button": "Contact",
     "form": {
-      "titl": "Get in touch",
+      "title": "Get in touch",
       "labels": {
         "name": "Name",
         "subject": "Subject",
         "message": "Message"
+      },
+      "toaster": {
+        "success": "Message sent successfully!",
+        "error": "Failed to send message! Try again!"
       },
       "errors": {
         "name": "Name field is required",
