@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import Footer from "@/components/Global/footer";
 import Navbar from "@/components/Global/Navbar";
 import { Toaster } from "sonner";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default async function LocaleLayout({
           inter.className
         )}
       >
+        <Analytics />
         <Toaster
           richColors
           position="top-center"
