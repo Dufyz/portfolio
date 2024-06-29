@@ -1,3 +1,4 @@
+import "@/styles/wave-hand-svg.css";
 import Link from "next/link";
 
 import { Typewriter } from "react-simple-typewriter";
@@ -5,6 +6,8 @@ import { useTranslations } from "next-intl";
 import AnimatedButton from "../Global/AnimatedButton";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import WaveHand from "../Global/wave-hand";
 
 export default function HeroSection() {
   const { ref, inView } = useInView();
@@ -39,9 +42,14 @@ export default function HeroSection() {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
                   Guilherme Schmidt.
                 </h1>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl text-zinc-400 font-bold">
-                  {t("h2")}
-                </h2>
+                <div className="flex items-center justify-start flex-wrap">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl text-zinc-400 font-bold">
+                    {t("h2")}
+                  </h2>
+                  <div className="flex items-center justify-center pt-2">
+                    <WaveHand />
+                  </div>
+                </div>
               </div>
             </div>
             <p className="text-muted-foreground max-w-xl text-gray-500 text-base sm:text-lg md:text-xl">

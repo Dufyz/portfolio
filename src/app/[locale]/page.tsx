@@ -6,8 +6,7 @@ import { useEffect } from "react";
 import About from "@/components/home/about";
 import HeroSection from "@/components/home/hero-section";
 import Contact from "@/components/home/contact";
-import Work from "@/components/home/work";
-import Experience from "@/components/home/experience";
+import Projects from "@/components/home/projects";
 
 export default function HomePage() {
   useEffect(() => {
@@ -22,8 +21,7 @@ export default function HomePage() {
     <main>
       <HeroSection />
       <About />
-      {/* <Experience /> */}
-      <Work />
+      <Projects />
       <Contact />
     </main>
   );

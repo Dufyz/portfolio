@@ -2,7 +2,7 @@ import { FeatureHighlite } from "@/components/Global/feature-highlite";
 import { useTranslations } from "next-intl";
 
 export const useHighlightedProjects = (): FeatureHighlite[] => {
-  const t = useTranslations("work.highlightedProjects");
+  const t = useTranslations("projects.highlightedProjects");
 
   return [
     {

@@ -19,10 +19,25 @@
       "first": "Se você tiver dúvidas ou interesse, não hesite em contactar-me.",
       "second": "Obrigado pelo seu tempo e consideração."
     },
-    "button": "Contato"
+    "button": "Contato",
+    "form": {
+      "title": "Entrar em contato",
+      "labels": {
+        "name": "Nome",
+        "subject": "Assunto",
+        "message": "Mensagem"
+      },
+      "errors": {
+        "name": "Campo nome é obrigatório.",
+        "message": "Campo mensagem é obrigatório.",
+        "subject": "Campo assunto é obrigatório.",
+        "email": "Campo email é obrigatório."
+      },
+      "submit": "Enviar"
+    }
   },
-  "work": {
-    "title": "Algumas coisas que contruí",
+  "projects": {
+    "title": "Alguns dos meus projetos",
     "buttons": {
       "viewMore": "Ver mais"
     },

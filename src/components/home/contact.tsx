@@ -1,9 +1,8 @@
 import { Typewriter } from "react-simple-typewriter";
-import AnimatedButton from "../Global/AnimatedButton";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { ContactDrawer } from "../Global/ContactDrawer.tsx";
 
 export default function Contact() {
   const t = useTranslations("contact");
@@ -41,11 +40,7 @@ export default function Contact() {
             <p>{t("descriptions.second")}</p>
           </div>
         </div>
-        <Link href={"https://linktr.ee/Dufyz"} target="_blank">
-          <AnimatedButton>
-            <span>{t("button")}</span>
-          </AnimatedButton>
-        </Link>
+        <ContactDrawer />
       </div>
     </section>
   );

@@ -3,7 +3,7 @@
     "items": {
       "about": "about",
       "experience": "experience",
-      "work": "work",
+      "projects": "projects",
       "contact": "contact"
     }
   },
@@ -19,10 +19,25 @@
       "first": "If you have any question or interest, do not hesitate to reach me.",
       "second": "Thank you for your time and consideration."
     },
-    "button": "Contact"
+    "button": "Contact",
+    "form": {
+      "titl": "Get in touch",
+      "labels": {
+        "name": "Name",
+        "subject": "Subject",
+        "message": "Message"
+      },
+      "errors": {
+        "name": "Name field is required",
+        "message": "Message field is required",
+        "subject": "Subject field is required",
+        "email": "Email field is required"
+      },
+      "submit": "Submit"
+    }
   },
-  "work": {
-    "title": "Some Things I’ve Built",
+  "projects": {
+    "title": "Some of my projects",
     "buttons": {
       "viewMore": "View more"
     },

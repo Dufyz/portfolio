@@ -6,8 +6,6 @@ import NavbarDesktop from "./navbar-desktop";
 import { useState } from "react";
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
-
   return (
     <header
       className={`w-full bg-gray-900 h-20 flex items-center justify-between px-12 text-white fixed top-0 bg-opacity-95 ${
@@ -22,7 +20,7 @@ export default function Navbar() {
         </Link>
       </div>
       <>
-        <NavbarMobile open={open} setOpen={setOpen} />
+        <NavbarMobile />
         <NavbarDesktop />
       </>
     </header>

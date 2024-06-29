@@ -1,17 +1,15 @@
-import "./globals.css";
+import "@/app/globals.css";
 import "aos/dist/aos.css";
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Global/footer";
 import Navbar from "@/components/Global/Navbar";
+import { Toaster } from "sonner";
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Dufyz | Fullstack Developer",
@@ -31,10 +29,17 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased bg-gray-900",
-          fontSans.variable
+          "min-h-screen bg-background antialiased bg-gray-900",
+          inter.className
         )}
       >
+        <Toaster
+          richColors
+          position="top-center"
+          closeButton
+          visibleToasts={1}
+          expand
+        />
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}

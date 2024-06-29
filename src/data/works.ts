@@ -64,7 +64,7 @@ export const works: WorkItem[] = [
     year: 2024,
     project: "Duflix",
     technologies: ["react"],
-    link: "https://github.com/Dufyz/duflix",
+    link: "https://duflix.dufyz.dev/",
   },
   {
     year: 2023,

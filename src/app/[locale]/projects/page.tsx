@@ -3,7 +3,6 @@
 import {
   IconArrowLeft,
   IconArrowUpRight,
-  IconExternalLink,
   IconStar,
   IconStarFilled,
 } from "@tabler/icons-react";
@@ -24,7 +23,7 @@ import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 
 export default function WorkPage() {
-  const t = useTranslations("work.table");
+  const t = useTranslations("projects.table");
 
   const tableHeadItems = [
     {
