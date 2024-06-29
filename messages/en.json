@@ -1,0 +1,79 @@
+{
+  "navbar": {
+    "items": {
+      "about": "about",
+      "experience": "experience",
+      "projects": "projects",
+      "contact": "contact"
+    }
+  },
+  "heroSection": {
+    "h1": "Hi, my name is",
+    "h2": "I build somethings.",
+    "description": "I’m a software engineer specializing in building exceptional digital experiences. Currently, I’m focused on my work at",
+    "resumeButton": "Checkout out my resume!"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "descriptions": {
+      "first": "If you have any question or interest, do not hesitate to reach me.",
+      "second": "Thank you for your time and consideration."
+    },
+    "button": "Contact",
+    "form": {
+      "title": "Get in touch",
+      "labels": {
+        "name": "Name",
+        "subject": "Subject",
+        "message": "Message"
+      },
+      "toaster": {
+        "success": "Message sent successfully!",
+        "error": "Failed to send message! Try again!"
+      },
+      "errors": {
+        "name": "Name field is required",
+        "message": "Message field is required",
+        "subject": "Subject field is required",
+        "email": "Email field is required"
+      },
+      "submit": "Submit"
+    }
+  },
+  "projects": {
+    "title": "Some of my projects",
+    "buttons": {
+      "viewMore": "View more"
+    },
+    "table": {
+      "title": "All projects",
+      "headers": {
+        "year": "Year",
+        "project": "Project",
+        "technologies": "Technologies"
+      }
+    },
+    "highlightedProjects": {
+      "knowledgeBase": {
+        "title": "Knowledgebase / CMS",
+        "description": "A robust multitenant content management system (CMS) platform, developed to facilitate the creation, organization, and access to a comprehensive knowledge base. This project offers a user-friendly and highly efficient interface. The CMS is integrated with third-party software (Sacflow), providing a complete and integrated solution for a knowledge base."
+      },
+      "yourFinance": {
+        "title": "YourFinance",
+        "description": "A complete financial application that allows users to manage their personal finances efficiently and securely. The intuitive interface and advanced features ensure a superior user experience."
+      },
+      "languageDetector": {
+        "title": "Language Detector",
+        "description": "A machine learning-based language detector designed to identify languages from provided texts. This project demonstrates the practical application of data science and machine learning techniques in a real-world context."
+      }
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "description": {
+      "p1": "My passion for knowledge began in childhood, with a fascination for astronomy. This initial interest led me to understand the importance of data in science and the operation of complex systems, such as cars, robots, and artificial intelligences. This is how my love for technology blossomed, guiding my career to where it is today.",
+      "p2": "Graduated in Software Engineering from the Federal University of Goiás (UFG), I have a solid academic and professional background that has enhanced my technical and personal skills. Over the years, I have acquired extensive experience in end-to-end development, databases, and infrastructure.",
+      "p3": "In my projects, I always strive to develop efficient and effective solutions, integrating multiple technologies and areas of knowledge. My commitment to excellence and continuous improvement is evident in every work I undertake. My past experiences are a testament to my dedication, demonstrating my skills in collaboration with teams."
+    }
+  }
+}
