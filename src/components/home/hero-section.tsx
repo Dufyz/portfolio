@@ -53,14 +53,7 @@ export default function HeroSection() {
               </div>
             </div>
             <p className="text-muted-foreground max-w-xl text-gray-500 text-base sm:text-lg md:text-xl">
-              {t("description")}{" "}
-              <Link
-                href={"https://www.hyerdev.com/"}
-                target="_blank"
-                className="text-yellow-500"
-              >
-                Hyerdev
-              </Link>
+              {t("description")}
             </p>
           </div>
           <AnimatedButton>
