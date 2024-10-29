@@ -71,6 +71,10 @@ export const technologies = {
     label: "styled-components",
     link: "https://styled-components.com/",
   },
+  vitejs: {
+    label: "Vite.JS",
+    link: "https://vite.dev/",
+  },
 };
 
 export type Technologies = keyof typeof technologies;

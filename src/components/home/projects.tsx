@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { useHighlightedProjects } from "@/data/highlightedProjects";
 
-const MAX_HIGLITES_HOME_PAGE = 3;
+const MAX_HIGLITES_HOME_PAGE = 4;
 
 export default function Projects() {
   const t = useTranslations("projects");

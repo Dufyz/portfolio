@@ -55,6 +55,10 @@
       }
     },
     "highlightedProjects": {
+      "pedido-io": {
+        "title": "Pedido.io",
+        "description": "Pedido.io is an online order management platform designed for small and medium-sized restaurants. It enables streamlined order control, menu management, and real-time monitoring of preparation and delivery, enhancing both customer service and restaurant operations."
+      },
       "knowledgeBase": {
         "title": "Knowledgebase / CMS",
         "description": "A robust multitenant content management system (CMS) platform, developed to facilitate the creation, organization, and access to a comprehensive knowledge base. This project offers a user-friendly and highly efficient interface. The CMS is integrated with third-party software (Sacflow), providing a complete and integrated solution for a knowledge base."

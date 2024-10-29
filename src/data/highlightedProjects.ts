@@ -6,6 +6,24 @@ export const useHighlightedProjects = (): FeatureHighlite[] => {
 
   return [
     {
+      imageSrc: "/projects/pedidoio.png",
+      title: t("pedido-io.title"),
+      description: t("pedido-io.description"),
+      technologies: [
+        "vitejs",
+        "postgresql",
+        "vercel",
+        "tailwind",
+        "docker",
+        "go",
+        "shadcn",
+      ],
+      externalLinks: {
+        external: "https://portal.pedido.io/",
+      },
+      side: "left",
+    },
+    {
       imageSrc: "/projects/knowledge-base.png",
       title: t("knowledgeBase.title"),
       description: t("knowledgeBase.description"),

@@ -47,6 +47,10 @@
       "viewMore": "Ver mais"
     },
     "highlightedProjects": {
+      "pedido-io": {
+        "title": "Pedido.io",
+        "description": "Pedido.io é uma plataforma de gestão de pedidos online voltada para pequenos e médios restaurantes. Ela permite controlar pedidos, gerenciar cardápios e monitorar o preparo e entrega de forma centralizada e prática, otimizando o atendimento e a operação do restaurante."
+      },
       "knowledgeBase": {
         "title": "Knowledgebase / CMS",
         "description": "Uma plataforma robusta de gestão de conteúdo (CMS) multitenant, desenvolvida para facilitar a criação, organização e acesso a uma base de conhecimento abrangente. Este projeto oferece uma interface amigável e altamente eficiente. O CMS é integrado ao software de terceiros (Sacflow), proporcionando uma solução completa e integrada para uma base de conhecimento."

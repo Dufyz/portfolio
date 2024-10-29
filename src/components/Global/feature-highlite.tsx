@@ -34,7 +34,7 @@ export default function FeatureHighlite({
         }`}
       >
         <Image
-          alt="project knowledge-base image"
+          alt="project  image"
           width={1240}
           height={1240}
           quality={100}
