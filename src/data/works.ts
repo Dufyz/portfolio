@@ -11,6 +11,42 @@ type WorkItem = {
 export const works: WorkItem[] = [
   {
     year: 2024,
+    project: "Websocket Chats",
+    technologies: ["go", "vitejs"],
+    link: "https://github.com/Dufyz/websocket-chats",
+    isFavourite: true,
+  },
+  {
+    year: 2024,
+    project: "Websocket Rooms",
+    technologies: ["go", "vitejs"],
+    link: "https://github.com/Dufyz/websocket-rooms",
+    isFavourite: true,
+  },
+  {
+    year: 2024,
+    project: "Pedido.io",
+    technologies: [
+      "go",
+      "vitejs",
+      "docker",
+      "tailwind",
+      "postgresql",
+      "vercel",
+      "typescript",
+    ],
+    link: "https://portal.pedido.io/",
+    isFavourite: true,
+  },
+  {
+    year: 2024,
+    project: "Hash challenge",
+    technologies: ["go"],
+    link: "https://github.com/Dufyz/hash-challenge",
+    isFavourite: true,
+  },
+  {
+    year: 2024,
     project: "Your Finance",
     technologies: [
       "nextjs",
@@ -23,13 +59,6 @@ export const works: WorkItem[] = [
       "github",
     ],
     link: "https://github.com/Dufyz/your-finance",
-    isFavourite: true,
-  },
-  {
-    year: 2024,
-    project: "Hash challenge",
-    technologies: ["go"],
-    link: "https://github.com/Dufyz/hash-challenge",
     isFavourite: true,
   },
   {
@@ -54,14 +83,14 @@ export const works: WorkItem[] = [
     link: "https://github.com/Dufyz/portfolio",
     isFavourite: true,
   },
+  // {
+  //   year: 2024,
+  //   project: "CASER",
+  //   technologies: ["nextjs", "typescript", "tailwind", "vercel"],
+  //   link: "",
+  // },
   {
-    year: 2024,
-    project: "CASER",
-    technologies: ["nextjs", "typescript", "tailwind", "vercel"],
-    link: "",
-  },
-  {
-    year: 2024,
+    year: 2023,
     project: "Duflix",
     technologies: ["react"],
     link: "https://duflix.dufyz.dev/",

@@ -40,24 +40,6 @@ export const useHighlightedProjects = (): FeatureHighlite[] => {
       },
     },
     {
-      imageSrc: "/projects/your-finance.png",
-      title: t("yourFinance.title"),
-      description: t("yourFinance.description"),
-      technologies: [
-        "nextjs",
-        "postgresql",
-        "supabase",
-        "vercel",
-        "tailwind",
-        "shadcn",
-      ],
-      externalLinks: {
-        github: "https://github.com/Dufyz/your-finance",
-        external: "https://your-finance-web.vercel.app/dashboard",
-      },
-      side: "left",
-    },
-    {
       imageSrc: "/projects/language-detector.png",
       title: t("languageDetector.title"),
       description: t("languageDetector.description"),
@@ -65,6 +47,7 @@ export const useHighlightedProjects = (): FeatureHighlite[] => {
       externalLinks: {
         github: "https://github.com/Dufyz/ML-Language-Detector-Interface",
       },
+      side: "left",
     },
   ];
 };
